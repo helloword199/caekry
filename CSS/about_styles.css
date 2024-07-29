@@ -1,0 +1,254 @@
+* {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.responsive-container-block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.text-blk {
+    margin: 0;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.responsive-container-block.bigContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.text-blk.headingText {
+    font-size: 23px;
+    font-weight: 700;
+    color: rgb(0, 135, 177);
+    margin-bottom: 10px;
+}
+
+.allText {
+    width: 50%;
+}
+
+.text-blk.subHeadingText {
+    color: rgb(102, 102, 102);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.text-blk.description {
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 40px;
+}
+
+.explore {
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(244, 152, 146);
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(244, 152, 146, 0.25) 0px 10px 20px;
+    border-radius: 10px;
+    padding: 9px 45px;
+}
+
+.explore:hover {
+    background-color: rgb(255, 235, 234);
+    color: rgb(244, 152, 146);
+}
+
+.responsive-container-block.Container {
+    margin: 80px auto 50px;
+    max-width: 1320px;
+    padding: 10px;
+}
+
+.responsive-container-block.Container.bottomContainer {
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.videoContainer {
+    width: 46%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+}
+
+.mainVideo {
+    width: 85%;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.dotsImg {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    object-fit: cover;
+    opacity: 0; /* Make dots less visible */
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1); /* More transparent circles */
+    pointer-events: none; /* Ensure circles don't block interaction */
+    z-index: 0; /* Place circles behind the video */
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 15%;
+}
+
+.circle2 {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 60%;
+}
+
+.circle3 {
+    width: 80px;
+    height: 80px;
+    bottom: 10%;
+    right: 15%;
+}
+
+.topLeftButton, .topRightButton {
+    position: absolute;
+    background-color: #e7a8a8;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.topLeftButton {
+    top: 10px;
+    left: 10px;
+}
+
+.topRightButton {
+    top: 10px;
+    right: 10px;
+}
+
+@media (max-width: 1024px) {
+    .responsive-container-block.Container {
+        max-width: 850px;
+    }
+    .allText {
+        width: 40%;
+        margin-left: 20px;
+    }
+    .responsive-container-block.Container.bottomContainer {
+        margin-top: 80px;
+    }
+    .text-blk.headingText, .text-blk.subHeadingText, .text-blk.description {
+        text-align: center;
+    }
+    .dotsImg {
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .videoContainer {
+        width: 100%;
+    }
+    .mainVideo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .allText {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .responsive-container-block.Container {
+        flex-direction: column;
+    }
+    .text-blk.subHeadingText {
+        font-size: 28px;
+    }
+    .text-blk.description {
+        font-size: 18px;
+    }
+    .mainVideo {
+        height: 400px;
+    }
+    .videoContainer {
+        height: 550px;
+    }
+    .explore {
+        font-size: 16px;
+        padding: 8px 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .responsive-container-block.Container {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .explore {
+        font-size: 16px;
+        padding: 8px 35px;
+    }
+    .dotsImg {
+        width: 80%;
+    }
+    .mainVideo {
+        height: 260px;
+    }
+    .videoContainer {
+        height: 320px;
+    }
+    .text-blk.description {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .text-blk.subHeadingText {
+        font-size: 24px;
+    }
+}
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+

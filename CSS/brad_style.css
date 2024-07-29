@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #7f4e47;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    margin: 0;
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.cake-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cake-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+
+.cake-item img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
+.cake-item h2 {
+    margin: 10px 0 5px;
+}
+
+.cake-item .price {
+    color:#9f746e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cake-item .description {
+    color: #666;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    position: absolute;
+    top: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #b18e88;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button-left {
+    left: 15px;
+}
+
+.button-right {
+    right: 15px;
+}

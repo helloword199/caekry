@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    margin: 0; /* Removes default margin from body */
+    font-family: 'Nunito', sans-serif; /* Sets the font family for the entire page */
+}
+
+/* Container for contact section */
+.contact_us_green {
+    background-color: #f9f9f9; /* Sets background color for the contact section */
+    padding: 60px 20px; /* Adds padding around the contact section */
+}
+
+/* Container for responsive layout */
+.responsive-container {
+    display: flex; /* Uses Flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line if needed */
+    max-width: 1100px; /* Sets a maximum width for the container */
+    margin: 0 auto; /* Centers the container horizontally */
+}
+
+/* Form Section */
+.contact_form {
+    flex: 1; /* Allows the form section to take up available space */
+    padding-right: 40px; /* Increases the padding on the right side */
+    border-right: 1px solid #e0e0e0; /* Lightens the right border color */
+}
+
+.form-box {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Arranges children in a vertical column */
+}
+
+.form-wrapper {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Arranges children in a vertical column */
+}
+
+.head-text-box {
+    margin-bottom: 30px; /* Adds space below the heading section */
+}
+
+.contactus-head {
+    font-size: 40px; /* Sets the font size for the main heading */
+    font-weight: 600; /* Slightly lighter font weight for a softer look */
+    display: none; /* Hides the "Contact Us" heading */
+}
+
+.contactus-subhead {
+    font-size: 18px; /* Sets the font size for the subheading */
+    color: #737373; /* Lighter text color */
+}
+
+.form-fields {
+    display: flex; /* Uses Flexbox for layout */
+    flex-wrap: wrap; /* Allows form fields to wrap onto the next line if needed */
+    gap: 20px; /* Adds space between form fields */
+}
+
+.form-field {
+    flex: 1; /* Allows form fields to take up available space */
+    min-width: 200px; /* Sets a minimum width for form fields */
+}
+
+.input-title {
+    font-size: 15px; /* Sets the font size for labels */
+    font-weight: 500; /* Makes the font semi-bold */
+    margin-bottom: 10px; /* Adds space below the label */
+    color: #737373; /* Lighter text color */
+}
+
+.input, .textinput {
+    width: 90%; /* Makes input fields take up full width of their container */
+    padding: 12px; /* Adds padding inside input fields */
+    border: 2px solid #e0e0e0; /* Lightens the border color */
+    border-radius: 8px; /* Increases the border radius for a softer look */
+    font-size: 16px; /* Sets the font size inside input fields */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+}
+
+.textinput {
+    height: 200px; /* Sets a fixed height for the textarea */
+}
+
+.btn-wrapper {
+    display: flex; /* Uses Flexbox for layout */
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 20px; /* Adds space above the button */
+}
+
+.submit-btn {
+    background-color: #2e5a3f; /* Darker background color for the submit button */
+    color: white; /* Sets text color for the button */
+    border: none; /* Removes the default border */
+    border-radius: 8px; /* Increases the border radius */
+    padding: 15px 30px; /* Adds padding inside the button */
+    font-size: 18px; /* Sets the font size inside the button */
+    cursor: pointer; /* Changes cursor to a pointer on hover */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.submit-btn:hover {
+    background-color: #1c3b28; /* Darker background on hover */
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15); /* Slightly darker shadow on hover */
+}
+
+/* Contact Info Section */
+.contact_info {
+    flex: 1; /* Allows the contact info section to take up available space */
+    padding-left: 40px; /* Increases the padding on the left side */
+}
+
+.contact-details {
+    display: flex; /* Uses Flexbox for layout */
+    flex-direction: column; /* Arranges items in a vertical column */
+    gap: 20px; /* Adds space between contact details */
+    margin-bottom: 40px; /* Adds space below the contact details section */
+}
+
+.contact-item {
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers items */
+    margin-bottom: 20px; /* Adds space below each contact item */
+}
+
+.contact-icon {
+    width: 40px; /* Sets width for contact icons */
+    height: 40px; /* Sets height for contact icons */
+    margin-right: 15px; /* Adds space to the right of the icon */
+}
+
+.contact-text {
+    color: #737373; /* Lighter text color for contact details */
+    font-size: 16px; /* Sets font size for contact details */
+}
+
+.social-media-links {
+    display: flex; /* Uses Flexbox for layout */
+    gap: 20px; /* Adds space between social media icons */
+}
+
+.social-icon {
+    width: 35px; /* Sets width for social media icons */
+    height: 35px; /* Sets height for social media icons */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact_form, .contact_info {
+        padding: 0; /* Removes padding on smaller screens */
+    }
+    
+    .contact_form {
+        border-right: none; /* Removes the right border on smaller screens */
+    }
+    
+    .contact-details {
+        flex-direction: column; /* Stacks contact details vertically on smaller screens */
+    }
+
+}
+
+
